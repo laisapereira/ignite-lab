@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        sans: 'Roboto, sans-serif',     // tailwind usar roboto para toda a aplicação
+      },
       colors: {
         green: {
           300: '#00B37E',
@@ -17,6 +20,7 @@ module.exports = {
         orange: {
           500: '#FBA94C',
         },
+        
         red: {
           500: '#F75A68',
         },
