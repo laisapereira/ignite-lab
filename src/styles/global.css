@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 body {
+-webkit-font-smoothing: antialiased;
 @apply bg-gray-900 text-gray-100
 
+}
 
+main {
+  @apply flex flex-1 justify-between
 }
