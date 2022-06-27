@@ -21,7 +21,7 @@ export default function Subscribe() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
 
-  const [ createSubscriber] = useMutation(CREATE_SUBSCRIBE)
+  const [ createSubscriber, { loading }] = useMutation(CREATE_SUBSCRIBE)
 
 
   async function handleSubscribe (event: FormEvent) {
@@ -46,7 +46,7 @@ export default function Subscribe() {
     <div className='min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center '>
       <div className='w-full max-w[1100px] flex items-center justify-evenly mt-20 mx-auto'>
         <div className='max-w-[640px]'>
-          <Logo/>
+          <a href="/"><Logo/></a>
 
           <h1 className='mt-8 text-[2.5rem] leading-tight'>Construa uma <strong className='text-blue-500'>aplicação completa</strong>, do zero, com <strong className='text-blue-500'>React JS</strong></h1>
 
@@ -76,7 +76,8 @@ export default function Subscribe() {
 
             <button
               type='submit'
-              className='mt-4 bg-green-500 uppercase rounded py-4 font-bold text-sm hover:bg-green-700 transition-colors'
+              className='mt-4 bg-green-500 uppercase rounded py-4 font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50'
+              disabled={loading}
             >
               Garantir minha vaga
             </button>
