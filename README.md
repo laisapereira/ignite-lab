@@ -1,7 +1,7 @@
 <h1 align="center"> Ignite Lab #3 by Laisa </h1>
 
 <p align="center">
-Minha participação no Ignite Lab #3 2022 (3 edição)
+Minha participação no Ignite Lab #3 2022
 </p>
 
 <p align="center">
